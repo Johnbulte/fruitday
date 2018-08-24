@@ -1,0 +1,42 @@
+{% extends 'login.html' %}
+{% block title %}
+	注册会员
+{% endblock %}
+
+{% block register %}
+	<a href="/templates/login.html">会员登录</a>
+{% endblock %}
+
+{% block form %}
+		<div class="right" style="margin-top:20px;">
+			<form action="login" method="post">
+
+				<p>
+					<span class="spanText">手机号</span>
+					<input type="text" name="uphone" class="uText">
+				</p>
+				<p>
+					<span class="spanText">密码</span>
+					<input type="password" name="upwd" class="uText" placeholder="请输入6-20位号码字符">
+				</p>
+				<p>
+					<span class="spanText">确认密码</span>
+					<input type="password" name="upwd" class="uText" placeholder="请再次确认密码">
+				</p>
+				<p>
+					<span class="spanText">用户名</span>
+					<input type="text" name="uname" class="uText" placeholder="请输入用户名">
+				</p>
+				<p>
+					<span class="spanText">邮箱</span>
+					<input type="text" name="umail" class="uText" placeholder="请输入邮箱">
+				</p>
+				<p>
+					<span class="spanText"></span>
+					<input type="submit" name="login" class="login">
+					<input type="button" name="regist" class="regist" value="注册会员">
+				</p>
+			</form>
+		</div>
+	</div>
+{% endblock %}
